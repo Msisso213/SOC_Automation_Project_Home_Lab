@@ -24,6 +24,10 @@ Here I have 3 instances:
 
 -A Wazuh instance running in the cloud on Digital Ocean
 ![Screenshot 2024-12-24 220752](https://github.com/user-attachments/assets/7614e038-7c78-4e80-b78a-80387f5b8c1a)
+After some configuration, I was able to have my windows 
 
 -A TheHive instance also running in the cloud on Digital Ocean in which Java, Cassandra, and ElasticSearch are installed
 ![Screenshot 2024-12-24 224257](https://github.com/user-attachments/assets/d038f230-9f16-45fc-a8c4-04bb719b6a55)
+After some configuration, I was able to have the have instance running on a particular IP address
+![Screenshot 2024-12-25 002635](https://github.com/user-attachments/assets/64e17460-8628-4a6f-abf1-1dd5c5cf3e26)
+
