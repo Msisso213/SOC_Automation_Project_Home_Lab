@@ -16,3 +16,14 @@ Here is an explanation of the logical diagram:
 5. Shuffle will send the alerts to TheHive.
 6-7. Shuffle will also send an email containing information about the events to the SOC analyst using internet.
 8. If an action is required, the SOC analyst will send the informations to the Windows 10 client through internet, Shuffle, and Wazuh Manager.
+
+# Part 2
+Here I have 3 instances:
+-A Windows 10 instance running under Virtual Box in which Sysmon is installed
+![Screenshot 2024-12-24 224608](https://github.com/user-attachments/assets/a8e405e3-1173-4373-9c39-fcf4c116a534)
+
+-A Wazuh instance running in the cloud on Digital Ocean
+![Screenshot 2024-12-24 220752](https://github.com/user-attachments/assets/7614e038-7c78-4e80-b78a-80387f5b8c1a)
+
+-A TheHive instance also running in the cloud on Digital Ocean in which Java, Cassandra, and ElasticSearch are installed
+![Screenshot 2024-12-24 224257](https://github.com/user-attachments/assets/d038f230-9f16-45fc-a8c4-04bb719b6a55)
