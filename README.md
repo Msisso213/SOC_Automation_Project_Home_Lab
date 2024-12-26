@@ -19,15 +19,11 @@ Here is an explanation of the logical diagram:
 
 # Part 2
 Here I have 3 instances:
--A Windows 10 instance running under Virtual Box in which Sysmon is installed
-![Screenshot 2024-12-24 224608](https://github.com/user-attachments/assets/a8e405e3-1173-4373-9c39-fcf4c116a534)
+-A Windows 10 instance running under Virtual Box in which Sysmon is installed.
+![Screenshot 2024-12-26 172543](https://github.com/user-attachments/assets/e6fec1c4-12ec-4b07-a9f3-b12dc14fea06)
 
--A Wazuh instance running in the cloud on Digital Ocean
-![Screenshot 2024-12-24 220752](https://github.com/user-attachments/assets/7614e038-7c78-4e80-b78a-80387f5b8c1a)
-After some configuration, I was able to have my windows 
+-A Wazuh instance running in the cloud on Digital Ocean on a specific IP address. After some configuration, I was able to add the windows instance as an agent.
+![Screenshot 2024-12-26 173002](https://github.com/user-attachments/assets/2181d3b3-d0a8-4173-8afa-99d8bc8060c0)
 
--A TheHive instance also running in the cloud on Digital Ocean in which Java, Cassandra, and ElasticSearch are installed
-![Screenshot 2024-12-24 224257](https://github.com/user-attachments/assets/d038f230-9f16-45fc-a8c4-04bb719b6a55)
-After some configuration, I was able to have the have instance running on a particular IP address
-![Screenshot 2024-12-25 002635](https://github.com/user-attachments/assets/64e17460-8628-4a6f-abf1-1dd5c5cf3e26)
-
+-A TheHive instance also running in the cloud on Digital Ocean in which Java, Cassandra, and ElasticSearch are installed.
+![Screenshot 2024-12-26 173152](https://github.com/user-attachments/assets/311db664-e675-48b6-aa22-cfdafd314f1f)
