@@ -33,3 +33,7 @@ The goal on this part is to generate telemetry to see if we can see on Wazuh if 
 ![Screenshot 2024-12-26 214029](https://github.com/user-attachments/assets/b911ce06-d5ca-4b38-a4f7-0f894bfdb082)
 After creating the alert, I re-used mimikatz, but this time having it named different to see if the Wazuh would still alert us since the original file name is the same. And it did!
 ![Screenshot 2024-12-26 215312](https://github.com/user-attachments/assets/395589c0-eac2-49e7-a0f5-b6e63a0fe89f)
+
+# Part 4
+The goal of this part is to connect shuffle (our SOAR (Security Orchestration Automation and Response)) to Wazuh. Then we need to design this workflow: Mimikatz alert sent to Shuffle which will extract the SHA256 Hash from the file and check the reputation score with VirusTotal. It will then send the details to TheHive to create an alert and send an email to the SOC Analyst for further investigation. After some setup, I was able to connect Shuffle to Wazuh which generated an alert when mimikatz was used.
+![Screenshot 2024-12-26 233018](https://github.com/user-attachments/assets/6f4f9980-da7c-413e-bf0a-c3ffbf642b65)
