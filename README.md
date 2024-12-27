@@ -27,3 +27,9 @@ Here I have 3 instances:
 
 -A TheHive instance also running in the cloud on Digital Ocean in which Java, Cassandra, and ElasticSearch are installed.
 ![Screenshot 2024-12-26 173152](https://github.com/user-attachments/assets/311db664-e675-48b6-aa22-cfdafd314f1f)
+
+# Part 3
+The goal on this part is to generate telemetry to see if we can see on Wazuh if an alert will happen for a specific event. This specific event will be the usage of mimikatz which is basically a tool that is used to extract credential from the windows memory of a device. So after some configuration on Wazuh so it can ingest telemetry coming from Sysmon, mimikatz was used on the device and the goal was to see what kind of telemetry was generated on Wazuh, so that I could create a custom alert for this type of event. I decided to create a custom alert on Wazuh when Sysmon would detect an event with an original file being mimikatz.exe
+![Screenshot 2024-12-26 214029](https://github.com/user-attachments/assets/b911ce06-d5ca-4b38-a4f7-0f894bfdb082)
+After creating the alert, I re-used mimikatz, but this time having it named different to see if the Wazuh would still alert us since the original file name is the same. And it did!
+![Screenshot 2024-12-26 215312](https://github.com/user-attachments/assets/395589c0-eac2-49e7-a0f5-b6e63a0fe89f)
