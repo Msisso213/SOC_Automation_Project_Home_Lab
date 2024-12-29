@@ -1,5 +1,5 @@
 # SOC_Automation_Project_Home_Lab
-The goal of this home lab is to mimic a SOC environment for identification, containment and eradication of possible threats, by sending alerts to a SOAR platform and emailing the analyst about the details of the alert. This home lab will also showcase some automation and responsive capabilities. This project will include Wazuh as an SIEM & XDR, TheHive for case management and Shuffle Automation for SOAR capabilities. This lab will be divided in 4 parts: 
+The goal of this home lab is to mimic a SOC environment for identification, containment and eradication of possible threats, by sending alerts to a SOAR platform about the details of the alert. This project will include Wazuh as an SIEM & XDR, TheHive for case management and Shuffle Automation for SOAR capabilities. This lab will be divided in 4 parts: 
 1. Logical Diagram
 2. Tools Configuration
 3. Telemetry Generation
@@ -37,3 +37,5 @@ After creating the alert, I re-used mimikatz, but this time having it named diff
 # Part 4
 The goal of this part is to connect shuffle (our SOAR (Security Orchestration Automation and Response)) to Wazuh. Then we need to design this workflow: Mimikatz alert sent to Shuffle which will extract the SHA256 Hash from the file and check the reputation score with VirusTotal. It will then send the details to TheHive to create an alert and send an email to the SOC Analyst for further investigation. After some setup, I was able to connect Shuffle to Wazuh which generated an alert when mimikatz was used.
 ![Screenshot 2024-12-26 233018](https://github.com/user-attachments/assets/6f4f9980-da7c-413e-bf0a-c3ffbf642b65)
+After setting up shuffle and creating an analyst account on theHive, I was able to send alert to the analyst account containing all important information such as the date of the event, the name of the device, the device user, the type of attack, and much more.
+![Screenshot 2024-12-28 231734](https://github.com/user-attachments/assets/9bea8d30-f97f-4fa4-a1d6-257450e72939)
